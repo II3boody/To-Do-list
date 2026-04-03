@@ -30,5 +30,5 @@
 
 1. قم بتحميل المشروع (Download ZIP) أو عمل `Clone` للمستودع:
    ```bash
-   git clone [https://github.com/II3boody/To-Do-list.git](https://github.com/II3boody/To-Do-list.git)
+   git clone https://github.com/II3boody/To-Do-list.git
    ```
