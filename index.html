@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart To-Do List</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <div class="app-header">
+        <button id="theme-toggle" title="تبديل الوضع">🌙</button>
+        <h1>📝 Smart To-Do List</h1>
+        <p>نظّم يومك خطوة بخطوة</p>
+      </div>
+
+      <!-- Quote Box -->
+      <div id="quote-box">
+        <span id="quote-text">جاري تحميل اقتباس...</span>
+      </div>
+
+      <!-- Input -->
+      <div class="input-row">
+        <input type="text" id="task-input" placeholder="اكتب مهمة جديدة..." />
+        <button id="add-btn">+ أضف</button>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">الكل</button>
+        <button class="filter-btn" data-filter="pending">قيد التنفيذ</button>
+        <button class="filter-btn" data-filter="done">المنتهية</button>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats">
+        <span>المهام: <span id="total-count">0</span></span>
+        <span>المنتهية: <span id="done-count">0</span></span>
+      </div>
+
+      <!-- Task List -->
+      <ul id="task-list"></ul>
+
+      <!-- Empty State -->
+      <div id="empty-state">
+        <span class="empty-icon">🗒️</span>
+        مفيش مهام هنا دلوقتي
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
